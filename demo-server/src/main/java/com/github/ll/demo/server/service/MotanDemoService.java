@@ -14,26 +14,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.github.chenxing2.demo.server;
+package com.github.ll.demo.server.service;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import com.github.ll.demo.api.IMotanDemo;
+import com.weibo.api.motan.config.springsupport.annotation.MotanService;
 
 /**
- * ServerApp
+ * MotanDemoService
  * 
- * @author 	alanwei
- * @since 	2016-09-15
+ * @author 	github
+ * @since 	2018-02-09
  */
-@SpringBootApplication
-public class ServerApp {
-	
-	/**
-	 * Main Entry
-	 * 
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		SpringApplication.run(ServerApp.class, args);
+@MotanService
+public class MotanDemoService implements IMotanDemo {
+
+	@Override
+	public String say(String val) {
+		return "hello " + val;
 	}
+
 }

@@ -14,26 +14,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.github.chenxing2.demo.client;
-
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+package com.github.ll.demo.api;
 
 /**
- * ClientApp
+ * ServerApp
  * 
- * @author 	alanwei
- * @since 	2016-09-16
+ * @author 	github
+ * @since 	2018-02-09
  */
-@SpringBootApplication
-public class ClientApp {
-	
+public interface IMotanDemo {
+
 	/**
-	 * Main Entry
-	 * 
-	 * @param args
+	 * demo method
 	 */
-	public static void main(String[] args) {
-		SpringApplication.run(ClientApp.class, args);
-	}
+	String say(String msg);
 }

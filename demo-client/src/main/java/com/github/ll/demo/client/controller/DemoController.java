@@ -14,20 +14,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.github.chenxing2.demo.client.controller;
+package com.github.ll.demo.client.controller;
 
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.github.chenxing2.demo.api.IMotanDemo;
+import com.github.ll.demo.api.IMotanDemo;
 import com.weibo.api.motan.config.springsupport.annotation.MotanReferer;
 
 /**
  * DemoController
  * 
- * @author 	alanwei
- * @since 	2016-09-16
+ * @author 	github
+ * @since 	2018-02-09
  */
 @RestController
 public class DemoController {
